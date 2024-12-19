@@ -1,0 +1,15 @@
+header {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+section {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+footer {
+  background-color: blueviolet;
+  color: wheat;
+  padding: 10px;
+}
