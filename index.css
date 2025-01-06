@@ -1,6 +1,6 @@
 header {
-  background-color: red;
-  color: white;
+  background-color: antiquewhite;
+  color: black;
   padding: 10px;
 }
 
@@ -11,5 +11,124 @@ section {
 footer {
   background-color: blueviolet;
   color: wheat;
+  padding: 25px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px #ccc;
+  padding: 15px 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.nav-items ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-items ul li {
+  margin: 10px;
+}
+
+.mainBody {
+  background-color: azure;
+  border: solid 1px #ccc;
+  padding: 25px;
+}
+
+.search {
+  margin: 10px 0;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.res-card {
+  width: calc(20% - 34px);
   padding: 10px;
+  border: solid 2px transparent;
+  background-color: #ccc;
+  margin: 5px;
+}
+.res-card h3 {
+  margin: 10px 0;
+}
+.res-card img {
+  width: 100%;
+  height: auto;
+}
+
+.res-card h5 {
+  margin: 10px 0;
+  color: chocolate;
+  padding: 0;
+  font-size: 20px;
+}
+.res-card h6 {
+  margin: 0 0 10px 0;
+  color: black;
+  padding: 0;
+  font-size: 12px;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border-color: darkgrey;
+  box-shadow: 0 2px 2px #ccc;
+}
+
+.footer {
+  border: solid 1px #ccc;
+  padding: 25px;
+}
+
+/*New css*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+main {
+  background-color: aliceblue;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  width: 275px;
+  height: 440px;
+  margin: 10px;
+  background-color: #ccc;
+}
+
+.login {
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
 }

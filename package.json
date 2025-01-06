@@ -1,0 +1,35 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is namaste react by balu",
+  "scripts": {
+    "start": "parcel index.html",
+    "bundle": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balu-github-1006/namaste-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Balu Bushipaga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balu-github-1006/namaste-react/issues"
+  },
+  "homepage": "https://github.com/balu-github-1006/namaste-react#readme",
+  "dependencies": {
+    "parcel": "^2.13.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

@@ -9,7 +9,12 @@
 </head>
 
 <body>
-    <header>
+    <div id="root">
+        Not Rendered !!!
+    </div>
+
+    <!-- Basic REACT Code without JSX and react works for small part of the website also example below here -->
+    <!-- <header>
         <h2>Header</h2>
     </header>
     <section>
@@ -24,7 +29,7 @@
     </section>
     <footer>
         <h2>Footer</h2>
-    </footer>
+    </footer> -->
 
     <!-- <script>
         const heading = document.createElement("h1");
@@ -34,10 +39,7 @@
         root.appendChild(heading);
     </script> -->
 
-
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="./App.js"></script>
+    <script type="module" src="./src/App.js"></script>
 </body>
 
 </html>
