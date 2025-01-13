@@ -52,35 +52,36 @@ footer {
   flex-wrap: wrap;
 }
 
-.res-card {
+.res-container > a {
   width: calc(20% - 34px);
   padding: 10px;
   border: solid 2px transparent;
   background-color: #ccc;
   margin: 5px;
+  text-decoration: none;
 }
-.res-card h3 {
+.res-container > a h3 {
   margin: 10px 0;
 }
-.res-card img {
+.res-container > a img {
   width: 100%;
   height: auto;
 }
 
-.res-card h5 {
+.res-container > a h5 {
   margin: 10px 0;
   color: chocolate;
   padding: 0;
   font-size: 20px;
 }
-.res-card h6 {
+.res-container > a h6 {
   margin: 0 0 10px 0;
   color: black;
   padding: 0;
   font-size: 12px;
 }
 
-.res-card:hover {
+.res-container > a:hover {
   cursor: pointer;
   border-color: darkgrey;
   box-shadow: 0 2px 2px #ccc;
@@ -131,4 +132,117 @@ main {
 
 .filter {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  margin-left: 5px;
+}
+input,
+button {
+  padding: 5px 10px;
+}
+
+.restaurant-menu {
+  width: 60%;
+  margin: 25px auto;
+}
+
+.top-desc {
+  padding: 5px 25px;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 10px #ccc;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.top-desc span {
+  margin-right: 25px;
+}
+
+.res-card-tile {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+  border-bottom: solid 1px #ccc;
+}
+
+.description {
+  width: 75%;
+}
+
+.description * {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.description h3 {
+  font-weight: 700;
+}
+
+.res-card-food-img {
+  width: 20%;
+  height: 100px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.res-card-food-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.accord-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordian:first-child {
+  display: none;
+}
+.accord-title span {
+  font-size: 30px;
+}
+
+.accord-content {
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.res-card-tile:last-child {
+  border: 0;
+}
+
+.food_type_filter {
+  display: flex;
+}
+
+.food_type_filter button {
+  margin-right: 10px;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.veg {
+  background-color: green;
+}
+
+.nonVeg {
+  background-color: red;
+}
+
+.food_type_filter .bestSeller {
+  color: #000;
 }

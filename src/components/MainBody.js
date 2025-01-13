@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react"; //Named import
 import Shimmer from "./Shimmer";
+import { Link } from "react-router";
 
 //We can write internal css also in react. We should declare a object with css properties.
 //This object we can set to style attribute on a component as a prop.
@@ -21,7 +22,7 @@ const MainBody = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4434646&lng=78.3771953&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9352403&lng=77.624532&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
     //console.log(json);
@@ -67,17 +68,9 @@ const MainBody = () => {
         <button
           className="btn"
           onClick={() => {
-            //Normal js way to re-set variable but this will not work in react.
-            // listOfRestaurants = listOfRestaurants.filter(
-            //   (restaurant, index) => {
-            //     return restaurant.info.avgRating > 4;
-            //   }
-            // );
-            //console.log(listOfRestaurants);
-
-            setListOfRestaurants(
+            setFilteredRestaurants(
               listOfRestaurants.filter(
-                (restaurant, index) => restaurant.info.avgRating > 4
+                (restaurant, index) => restaurant.info.avgRating > 4.4
               )
             );
           }}
@@ -87,7 +80,12 @@ const MainBody = () => {
       </div>
       <div className="res-container">
         {filteredRestaurants.map((restaurant) => (
-          <RestaurantCard resData={restaurant} key={restaurant.info.id} />
+          <Link
+            key={restaurant.info.id}
+            to={"/restaurants/" + restaurant.info.id}
+          >
+            <RestaurantCard resData={restaurant} />
+          </Link>
         ))}
       </div>
     </div>
